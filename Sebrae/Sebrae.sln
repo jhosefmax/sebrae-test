@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sebrae.API", "Sebrae.API\Sebrae.API.csproj", "{B24253BF-039D-4FCE-AA19-22D8B6A32F73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sebrae.Services", "Sebrae.Services\Sebrae.Services.csproj", "{E9F34E21-9717-4FB7-B3D3-5F7036A8BAB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sebrae.Persistence", "Sebrae.Persistence\Sebrae.Persistence.csproj", "{7294FE7E-1398-4C25-B4A2-540EDDC058D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sebrae.Repository", "Sebrae.Repository\Sebrae.Repository.csproj", "{184EBC48-3233-4125-B917-7F87258D2E43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sebrae.Test", "Sebrae.Test\Sebrae.Test.csproj", "{62D2D018-D358-4D2E-A84B-5025CE3C4076}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B24253BF-039D-4FCE-AA19-22D8B6A32F73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B24253BF-039D-4FCE-AA19-22D8B6A32F73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B24253BF-039D-4FCE-AA19-22D8B6A32F73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B24253BF-039D-4FCE-AA19-22D8B6A32F73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9F34E21-9717-4FB7-B3D3-5F7036A8BAB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9F34E21-9717-4FB7-B3D3-5F7036A8BAB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9F34E21-9717-4FB7-B3D3-5F7036A8BAB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9F34E21-9717-4FB7-B3D3-5F7036A8BAB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7294FE7E-1398-4C25-B4A2-540EDDC058D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7294FE7E-1398-4C25-B4A2-540EDDC058D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7294FE7E-1398-4C25-B4A2-540EDDC058D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7294FE7E-1398-4C25-B4A2-540EDDC058D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{184EBC48-3233-4125-B917-7F87258D2E43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{184EBC48-3233-4125-B917-7F87258D2E43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{184EBC48-3233-4125-B917-7F87258D2E43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{184EBC48-3233-4125-B917-7F87258D2E43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62D2D018-D358-4D2E-A84B-5025CE3C4076}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62D2D018-D358-4D2E-A84B-5025CE3C4076}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62D2D018-D358-4D2E-A84B-5025CE3C4076}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62D2D018-D358-4D2E-A84B-5025CE3C4076}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D604D2B5-34ED-4910-9F25-70CA81F88061}
+	EndGlobalSection
+EndGlobal
