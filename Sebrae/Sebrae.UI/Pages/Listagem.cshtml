@@ -1,0 +1,41 @@
+﻿
+@page "/List"
+@using Sebrae.UI.Model;
+@using Sebrae.UI.Services;
+@model ListagemModel
+@inject IApiClient ContaApiClient
+
+<h1>Listagem de Contas</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var conta in Model.Contas)
+        {
+            <tr>
+                <td>@conta.Nome</td>
+                <td>@conta.Descricao</td>
+                <td>
+                    <a href="#" onclick="EditarConta('@conta.Id')">Editar</a> |
+                    <a href="#" onclick="RemoverConta('@conta.Id')">Remover</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    function EditarConta(id) {
+        // Lógica para editar conta
+    }
+
+    function RemoverConta(id) {
+        // Lógica para remover conta
+    }
+</script>

@@ -1,0 +1,35 @@
+﻿@page "/edit/{id:int}"
+@using Sebrae.UI.Model;
+@using Sebrae.UI.Services;
+@model ContaViewModel
+@inject IApiClient ContaApiClient
+
+<h1>Editar Conta</h1>
+
+<form method="post" onsubmit="return EditarConta()">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" value="@Model.Nome" required>
+
+    <label for="descricao">Descrição:</label>
+    <input type="text" id="descricao" name="descricao" value="@Model.Descricao" required>
+
+    <button type="submit">Salvar</button>
+</form>
+
+<script>
+    function EditarConta() {
+        var id = @Model.Id; // Obtém o ID da model Razor
+        var nome = document.getElementById('nome').value;
+        var descricao = document.getElementById('descricao').value;
+
+        var contaEditada = {
+            Id: id,
+            Nome: nome,
+            Descricao: descricao
+        };
+
+        ContaApiClient.EditarConta(contaEditada);
+        // Lógica adicional, se necessário
+        return false; // Impede o envio do formulário
+    }
+</script>

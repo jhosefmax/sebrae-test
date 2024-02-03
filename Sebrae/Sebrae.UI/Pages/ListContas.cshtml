@@ -1,0 +1,22 @@
+﻿@page "/Lista"
+@using Sebrae.UI.Model;
+@model ListContasModel
+
+<table>
+    <tr>
+        <th>Nome</th>
+        <th>Descrição</th>
+        <th>Ações</th>
+    </tr>
+    @foreach (var conta in Model.Contas)
+    {
+        <tr>
+            <td>@conta.Nome</td>
+            <td>@conta.Descricao</td>
+            <td>
+                <a asp-page="Edit" asp-action="Editar" asp-route-id="@conta.Id">Editar</a> |
+                <a asp-action="Remover" asp-route-id="@conta.Id">Remover</a>
+            </td>
+        </tr>
+    }
+</table>
